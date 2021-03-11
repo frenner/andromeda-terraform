@@ -3,4 +3,4 @@
 #
 
 # Paste here your public ssh key. Make sure you use your rsa key.
-ssh_keypair                 = ""
+ssh_keypair                 = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDa7bFZRRCmjHC1AP6Ew9sU/ORnx1ZMM1xOnI54Byn8Up13xKMqD2LmEjv56n7XM/P07kWF8tboCyR9fjenjpIljalK0NlaYbqTnUDOxvAJGDcn5OqJWsb2Il+cZNP3pmkZCOsi8picQMsD8Eq6ftUAO438ZdNRThsiOBD5VupV5D1jENuA9GHJw5w0+D+Ppb8zsQXkdROm6Yr7oqoMFsSBRrL7tcP9pM8+TLFeEfCAWT2tk4/lXMqHEiEbFsK9MpawueLQTRkR8UppltyF0Oqe92iPP3RDY9anjbqmDZheSrs3Th+pie67xtXRGtG5DozbfBnQ9OgiUMH7Up+SGaT9a0SqEK3RWtQ05XLzI8C4lsRY4LRJlVFsASAOjCyQWWq0f7YBey8oYXO0jYgTcbb7zEFCmKSR4YM8uI+WezfeIQL6aM4o0g79l/LzzohA7g8typLmF6ltQkHY4KoxETkK8XUfIfEhhgjwTtjbYaM96LOuDWTzWMkbaOVyqBu/YPWYMaxu8NtryhcDK03Uko97k7qSx1EWGR4oDCdbYyEfBUFuAk67PaGGc/RrpK7dh42+Z5S4Ega4WKHDt8R/Xy6MIVtqk6RcKhEbtSz+0iD6mE4oRDaAf0oZ+bwYiozK06LhdyEL1Wk4ug9qahwK6kNktuqHpSDtzyxONPOxu95DfQ== morphdark RSA Key (florian.renner@florian-renner.de)"

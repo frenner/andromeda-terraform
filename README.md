@@ -22,6 +22,7 @@ You need to met the following requirements in order to use this examples.
 | Example name | Description |
 | :--- | :--- |
 | single-instance | A very basic example. Create a router, network and instance with floating IP. |
+| vrrp-address-pair | Bring up keepalived with a VIP using OpenStack address-pair |
 
 Note: For all examples we use the network `192.168.1.0/24`. Make sure you use it not already in your Andromeda project.
 
