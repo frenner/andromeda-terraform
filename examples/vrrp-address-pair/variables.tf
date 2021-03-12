@@ -54,6 +54,12 @@ variable "network_cidr" {
   default     = "192.168.1.0/24"
 }
 
+variable "network_short" {
+  description = "Network first three octets"
+  type        = string
+  default     = "192.168.1"
+}
+
 variable "internet_network_name" {
   description = "Andromeda network name for internet and aquiring floating IPs"
   type        = string

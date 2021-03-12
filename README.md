@@ -19,10 +19,10 @@ You need to met the following requirements in order to use this examples.
 
 ## Available examples
 
-| Example name | Description |
-| :--- | :--- |
-| single-instance | A very basic example. Create a router, network and instance with floating IP. |
-| vrrp-address-pair | Bring up keepalived with a VIP using OpenStack address-pair |
+| Example name | Description | |
+| :--- | :--- | :--- |
+| single-instance | A very basic example. Create a router, network and instance with floating IP. | [Readme](examples/single-instance/Readme.md)
+| vrrp-address-pair | Bring up keepalived with a VIP using OpenStack address-pair | [Readme](examples/vrrp-address-pair/Readme.md) |
 
 Note: For all examples we use the network `192.168.1.0/24`. Make sure you use it not already in your Andromeda project.
 
@@ -49,10 +49,11 @@ terraform destroy --var-file="../EXAMPLE-NAME.tfvars"
 
 ## FAQ
 
-**Q: I use the network `192.168.1.0/24` in my project. Can I change the network?**
+**Q: I use the network `192.168.1.0/24` in my project already. Can I change the network?**
 
-A: Yes, you can. In `.tfvars` file you want to use add overwrite for network cidr variable:
+A: Yes, you can. In `.tfvars` file you want to use add an overwrite for `network_cidr` and `network_short` variable:
 
 ```
-network_cidr = "172.31.1.0/24"
+network_cidr  = "172.31.1.0/24"
+network_short = "172.31.1"
 ```

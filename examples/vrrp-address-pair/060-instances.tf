@@ -35,6 +35,8 @@ resource "openstack_compute_instance_v2" "instance1" {
   key_pair           = openstack_compute_keypair_v2.ssh_keypair.name
   availability_zone  = var.availability_zone
 
+  user_data          = templatefile("${path.module}/templates/cloud-init.tpl", { network_short = var.network_short, prefix = var.prefix })
+
   network {
     port             = openstack_networking_port_v2.port_1_instance1.id
   }
@@ -47,6 +49,8 @@ resource "openstack_compute_instance_v2" "instance2" {
   key_pair           = openstack_compute_keypair_v2.ssh_keypair.name
   availability_zone  = var.availability_zone
 
+  user_data          = templatefile("${path.module}/templates/cloud-init.tpl", { network_short = var.network_short, prefix = var.prefix })
+
   network {
     port             = openstack_networking_port_v2.port_1_instance2.id
   }
@@ -54,9 +58,4 @@ resource "openstack_compute_instance_v2" "instance2" {
 
 output "ip_instance1" {
   value = openstack_networking_port_v2.port_1_instance1.all_fixed_ips
-}
-
-resource "openstack_compute_floatingip_associate_v2" "public_ip_1" {
-  floating_ip = openstack_networking_floatingip_v2.public_ip_1.address
-  instance_id = openstack_compute_instance_v2.instance1.id
 }
